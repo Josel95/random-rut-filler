@@ -1,0 +1,19 @@
+{
+    "name": "Random Rut Filler",
+    "version": "0.1.0",
+    "description": "Fill rut inputs with random generated ruts.",
+    "permissions": [
+        "activeTab",
+        "declarativeContent",
+        "storage"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": ["content.js"]
+        }
+    ],
+    "manifest_version": 2
+}
